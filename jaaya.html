@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>For My Love Aadya ❤️</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet" />
+
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(-45deg, #ff9a9e, #fad0c4, #fbc2eb, #a18cd1);
+      background-size: 400% 400%;
+      animation: gradient 15s ease infinite;
+      color: #fff;
+      scroll-behavior: smooth;
+      position: relative;
+      overflow-x: hidden;
+    }
+    @keyframes gradient {
+      0% {
+        background-position: 0% 50%;
+      }
+      50% {
+        background-position: 100% 50%;
+      }
+      100% {
+        background-position: 0% 50%;
+      }
+    }
+
+    header {
+      text-align: center;
+      padding: 50px 20px;
+      font-family: 'Great Vibes', cursive;
+      font-size: 3em;
+    }
+    .highlight {
+      color: #ff1744;
+      text-shadow: 0 0 15px rgba(255, 0, 70, 0.7), 0 0 30px rgba(255, 0, 70, 0.4);
+    }
+
+    section {
+      padding: 60px 20px;
+      text-align: center;
+    }
+
+    h2 {
+      font-family: 'Great Vibes', cursive;
+      font-size: 2.5em;
+      margin-bottom: 20px;
+    }
+
+    p {
+      font-size: 1.2em;
+      line-height: 1.6;
+      max-width: 700px;
+      margin: auto;
+    }
+
+    .gallery {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 15px;
+    }
+    .gallery img {
+      width: 300px;
+      border-radius: 15px;
+      box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
+      transition: transform 0.3s ease;
+    }
+    .gallery img:hover {
+      transform: scale(1.05);
+    }
+
+    .btn {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 12px 25px;
+      background: #ff1744;
+      color: #fff;
+      border-radius: 25px;
+      text-decoration: none;
+      font-weight: 600;
+      box-shadow: 0 5px 15px rgba(255, 23, 68, 0.4);
+      transition: all 0.3s ease;
+    }
+    .btn:hover {
+      background: #ff4569;
+      transform: scale(1.05);
+    }
+
+    .timeline {
+      width: 80%;
+      margin: auto;
+      position: relative;
+    }
+    .timeline::before {
+      content: '';
+      position: absolute;
+      left: 50%;
+      top: 0;
+      bottom: 0;
+      width: 4px;
+      background: #fff;
+      border-radius: 2px;
+    }
+    .timeline-item {
+      width: 45%;
+      padding: 20px;
+      position: relative;
+      margin: 30px 0;
+    }
+    .timeline-item.left {
+      left: 0;
+      text-align: right;
+    }
+    .timeline-item.right {
+      left: 55%;
+      text-align: left;
+    }
+    .timeline-item img {
+      width: 100%;
+      border-radius: 12px;
+      margin-bottom: 15px;
+      box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
+    }
+
+    .hearts-bg {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      pointer-events: none;
+      overflow: hidden;
+      z-index: -1;
+    }
+  </style>
+</head>
+<body>
+  <div class="hearts-bg"></div>
+
+  <header>
+    <h1>
+      For My Love <span class="highlight">Aadya ❤️</span>
+    </h1>
+  </header>
+
+  <section id="about">
+    <h2>About You</h2>
+    <p>
+      My dearest Aadya, you are the most beautiful part of my life. Every smile,
+      every moment with you feels like magic written in the stars ✨. You are my
+      best friend, my love, my heartbeat ❤️.
+    </p>
+  </section>
+
+  <section id="salsa">
+    <h2>Salsa &amp; Spanish Vibes 💃</h2>
+    <p>
+      Since you love Spanish songs, this section is just for you. Imagine us
+      dancing under candlelight, swaying to a romantic rhythm filled with
+      passion, roses, and forever love. 🌹🔥
+    </p>
+  </section>
+
+  <section id="gallery">
+    <h2>Our Gallery 📸</h2>
+    <div class="gallery">
+      <img src="https://source.unsplash.com/600x400/?romantic,couple" alt="Couple 1" />
+      <img src="https://source.unsplash.com/600x400/?love,couple" alt="Couple 2" />
+      <img
+        src="https://source.unsplash.com/600x400/?romance,holding-hands"
+        alt="Couple 3"
+      />
+      <img src="https://source.unsplash.com/600x400/?couple,romantic" alt="Couple 4" />
+    </div>
+  </section>
+
+  <section id="journey">
+    <h2>Our Journey Together 💕</h2>
+    <p>Every step we’ve walked holds memories of love. Let’s relive them...</p>
+  </section>
+
+  <section class="timeline">
+    <div class="timeline-item left">
+      <img src="https://source.unsplash.com/400x300/?love,us" alt="Memory 1" />
+      <p>💖 The day we met, everything changed forever...</p>
+    </div>
+    <div class="timeline-item right">
+      <img src="https://source.unsplash.com/400x300/?romance,candles" alt="Memory 2" />
+      <p>✨ Candlelight evenings, laughter, and closeness that felt endless...</p>
+    </div>
+    <div class="timeline-item left">
+      <img src="https://source.unsplash.com/400x300/?spanish,dance" alt="Memory 3" />
+      <p>💃 Salsa rhythms, Spanish songs, and dancing under the stars...</p>
+    </div>
+    <div class="timeline-item right">
+      <img src="https://source.unsplash.com/400x300/?couple,journey" alt="Memory 4" />
+      <p>🚀 A journey of two souls becoming one, walking together always...</p>
+    </div>
+  </section>
+
+  <script>
+    // Floating small pink hearts background
+    function createHeart() {
+      const heart = document.createElement('div');
+      heart.innerText = '💖';
+      heart.style.position = 'absolute';
+      heart.style.fontSize = Math.random() * 20 + 15 + 'px';
+      heart.style.left = Math.random() * 100 + 'vw';
+      heart.style.animation = `floatUp ${6 + Math.random() * 4}s linear`;
+      document.querySelector('.hearts-bg').appendChild(heart);
+      setTimeout(() => heart.remove(), 10000);
+    }
+    setInterval(createHeart, 600);
+
+    // Floating animation keyframes
+    const style = document.createElement('style');
+    style.innerHTML = `
+    @keyframes floatUp {
+      from { transform: translateY(100vh) scale(1); opacity: 1; }
+      to { transform: translateY(-10vh) scale(0.5); opacity: 0; }
+    }`;
+    document.head.appendChild(style);
+
+    // 2D Bright Red Heart Blasts from EVERY side - more & bigger hearts
+    function blastHearts() {
+      const sides = ['left', 'right', 'top', 'bottom'];
+      for (let i = 0; i < 20; i++) {
+        const heart = document.createElement('div');
+        heart.innerText = '❤️';
+        heart.style.position = 'fixed';
+        heart.style.fontSize = Math.random() * 50 + 40 + 'px'; // Bigger hearts
+        heart.style.textShadow =
+          '0 0 20px #ff0000, 0 0 40px #ff1744, 0 0 60px #ff4569';
+        heart.style.opacity = 1;
+
+        // Clear previously set positions
+        heart.style.top = '';
+        heart.style.left = '';
+        heart.style.right = '';
+        heart.style.bottom = '';
+
+        let side = sides[Math.floor(Math.random() * sides.length)];
+
+        // Set start position depending on side
+        if (side === 'left') {
+          heart.style.left = '0';
+          heart.style.top = Math.random() * 100 + 'vh';
+        } else if (side === 'right') {
+          heart.style.right = '0';
+          heart.style.top = Math.random() * 100 + 'vh';
+        } else if (side === 'top') {
+          heart.style.top = '0';
+          heart.style.left = Math.random() * 100 + 'vw';
+        } else if (side === 'bottom') {
+          heart.style.bottom = '0';
+          heart.style.left = Math.random() * 100 + 'vw';
+        }
+
+        document.body.appendChild(heart);
+
+        // Random direction spread on X & Y axes
+        let xMove = (Math.random() - 0.5) * 300;
+        let yMove = (Math.random() - 0.5) * 300;
+
+        heart.animate(
+          [
+            { transform: 'scale(1)', opacity: 1 },
+            { transform: `translate(${xMove}vw, ${yMove}vh) scale(3)`, opacity: 0 },
+          ],
+          { duration: 2800, easing: 'ease-out' }
+        );
+
+        setTimeout(() => heart.remove(), 3000);
+      }
+    }
+    setInterval(blastHearts, 3000);
+    window.onload = blastHearts;
+  </script>
+</body>
+</html>

@@ -1,0 +1,343 @@
+/* Global romantic theme */
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #ffe6f0 0%, #f9c6d4 100%);
+  min-height: 100vh;
+  overflow-x: hidden;
+  transition: background 1s;
+}
+
+.main-header {
+  text-align: center;
+  padding: 2rem 0 1rem 0;
+  font-family: 'Great Vibes', cursive;
+  font-size: 2.5rem;
+  color: #d72660;
+  letter-spacing: 2px;
+}
+
+.heart {
+  animation: glow 1.5s infinite alternate;
+}
+
+@keyframes glow {
+  from { text-shadow: 0 0 10px #ff3366, 0 0 20px #ff3366; }
+  to { text-shadow: 0 0 30px #ff3366, 0 0 60px #ff3366; }
+}
+
+section {
+  margin: 2rem auto;
+  max-width: 700px;
+  background: rgba(255,255,255,0.7);
+  border-radius: 20px;
+  box-shadow: 0 8px 32px rgba(220, 20, 60, 0.15);
+  padding: 2rem;
+  backdrop-filter: blur(4px);
+  transition: box-shadow 0.5s;
+}
+
+section:hover {
+  box-shadow: 0 16px 48px rgba(220, 20, 60, 0.25);
+}
+
+h2 {
+  font-family: 'Great Vibes', cursive;
+  color: #d72660;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+p {
+  font-size: 1.1rem;
+  color: #333;
+}
+
+.gallery-photos {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.gallery-photos img {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 16px;
+  box-shadow: 0 4px 16px #f9c6d4;
+  border: 2px solid #d72660;
+  transition: transform 0.3s;
+}
+.gallery-photos img:hover {
+  transform: scale(1.08) rotate(-2deg);
+}
+
+.journey-link {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.7rem 1.5rem;
+  background: linear-gradient(90deg, #d72660 0%, #ffb6b9 100%);
+  color: #fff;
+  border-radius: 30px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  text-decoration: none;
+  box-shadow: 0 2px 8px #f9c6d4;
+  transition: background 0.3s;
+}
+.journey-link:hover {
+  background: linear-gradient(90deg, #ffb6b9 0%, #d72660 100%);
+}
+
+/* Timeline Styles */
+.timeline-bg {
+  background: linear-gradient(135deg, #f9c6d4 0%, #ffe6f0 100%);
+}
+.timeline {
+  position: relative;
+  max-width: 800px;
+  margin: 3rem auto;
+  padding: 2rem 0;
+}
+.timeline-item {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 3rem;
+  position: relative;
+}
+.timeline-item.left {
+  flex-direction: row;
+}
+.timeline-item.right {
+  flex-direction: row-reverse;
+}
+.timeline-content {
+  background: rgba(255,255,255,0.85);
+  border-radius: 16px;
+  box-shadow: 0 4px 16px #f9c6d4;
+  padding: 1.5rem;
+  min-width: 220px;
+  max-width: 350px;
+  text-align: center;
+  position: relative;
+}
+.timeline-content img {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 1rem;
+  border: 2px solid #d72660;
+}
+.back-link {
+  display: inline-block;
+  margin-top: 1rem;
+  color: #d72660;
+  font-family: 'Poppins', sans-serif;
+  text-decoration: none;
+  font-weight: 600;
+}
+.back-link:hover {
+  text-decoration: underline;
+}
+
+/* Floating Hearts */
+#floating-hearts {
+  position: fixed;
+  left: 0; top: 0;
+  width: 100vw; height: 100vh;
+  pointer-events: none;
+  z-index: 1;
+}
+
+/* Heart Blast */
+#heart-blast {
+  position: fixed;
+  left: 0; top: 0;
+  width: 100vw; height: 100vh;
+  pointer-events: none;
+  z-index: 2;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Dreamy candle/rose accents */
+section:before {
+  content: "";
+  display: block;
+  position: absolute;
+  left: -40px;
+  top: 20px;
+  width: 32px;
+  height: 32px;
+  background: url('https://cdn-icons-png.flaticon.com/512/616/616494.png') no-repeat center/cover;
+  opacity: 0.3;
+}
+section:after {
+  content: "";
+  display: block;
+  position: absolute;
+  right: -40px;
+  bottom: 20px;
+  width: 32px;
+  height: 32px;
+  background: url('https://cdn-icons-png.flaticon.com/512/616/616494.png') no-repeat center/cover;
+  opacity: 0.3;
+}
+
+@media (max-width: 600px) {
+  section, .timeline-content {
+    padding: 1rem;
+    min-width: 120px;
+    max-width: 95vw;
+  }
+  .gallery-photos img {
+    width: 80px;
+    height: 80px;
+  }
+  .timeline-content img {
+    width: 50px;
+    height: 50px;
+  }
+}
+/* Global romantic theme */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  color: #fff;
+  text-align: center;
+  overflow-x: hidden;
+}
+
+header {
+  padding: 40px 20px;
+  background: rgba(0,0,0,0.5);
+}
+
+header h1 {
+  font-size: 3em;
+  text-shadow: 0 0 20px #ff4d6d;
+}
+
+nav a {
+  margin: 0 15px;
+  color: #ffe6ec;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+section {
+  padding: 80px 20px;
+}
+
+/* Romantic backgrounds */
+.romantic-bg.roses {
+  background: url('https://images.unsplash.com/photo-1506748686214-e9df14d4d9d0') center/cover no-repeat;
+}
+.romantic-bg.salsa {
+  background: url('https://images.unsplash.com/photo-1519744346362-d4e4da0e9b36') center/cover no-repeat;
+}
+.romantic-bg.candles {
+  background: url('https://images.unsplash.com/photo-1504196606672-aef5c9cefc92') center/cover no-repeat;
+}
+.romantic-bg.hearts {
+  background: url('https://images.unsplash.com/photo-1505685296765-3a2736de412f') center/cover no-repeat;
+}
+.romantic-bg.sky {
+  background: url('https://images.unsplash.com/photo-1500530855697-b586d89ba3ee') center/cover no-repeat;
+}
+
+footer {
+  padding: 20px;
+  background: rgba(0,0,0,0.6);
+}
+
+/* Timeline styling */
+.timeline {
+  position: relative;
+  max-width: 900px;
+  margin: 50px auto;
+  padding: 20px 0;
+}
+
+.timeline::after {
+  content: '';
+  position: absolute;
+  width: 4px;
+  background: linear-gradient(180deg, #ff4d6d, #ff80a0, #ffb6c1);
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  margin-left: -2px;
+  border-radius: 2px;
+  animation: glowLine 4s ease-in-out infinite alternate;
+}
+
+@keyframes glowLine {
+  0% { box-shadow: 0 0 5px #ff4d6d, 0 0 10px #ff80a0; }
+  50% { box-shadow: 0 0 20px #ff4d6d, 0 0 40px #ff80a0, 0 0 60px #ffb6c1; }
+  100% { box-shadow: 0 0 5px #ff4d6d, 0 0 10px #ff80a0; }
+}
+
+.timeline-item {
+  padding: 20px;
+  background: rgba(255,255,255,0.1);
+  border-radius: 15px;
+  width: 40%;
+  position: relative;
+  margin: 30px 0;
+}
+
+.timeline-item.left { left: 0; }
+.timeline-item.right { left: 60%; }
+
+.timeline-item::before {
+  content: attr(data-icon);
+  position: absolute;
+  font-size: 20px;
+  top: 20px;
+  right: -15px;
+  background: #fff0f6;
+  border: 2px solid #ff4d6d;
+  color: #ff4d6d;
+  padding: 8px;
+  border-radius: 50%;
+  animation: pulseGlow 2s infinite ease-in-out;
+}
+
+.timeline-item.right::before {
+  left: -15px;
+  right: auto;
+}
+
+@keyframes pulseGlow {
+  0% { transform: scale(1); box-shadow: 0 0 5px #ff4d6d; }
+  50% { transform: scale(1.2); box-shadow: 0 0 20px #ff80a0, 0 0 30px #ff4d6d; }
+  100% { transform: scale(1); box-shadow: 0 0 5px #ff4d6d; }
+}
+
+/* Music Button */
+#playMusicBtn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: linear-gradient(45deg, #ff4d6d, #ff80a0);
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 25px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 0 0 15px #ff4d6d;
+  transition: all 0.3s ease;
+  z-index: 1000;
+}
+
+#playMusicBtn:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 25px #ff80a0, 0 0 35px #ff4d6d;
+}
